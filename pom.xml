@@ -10,7 +10,7 @@
     </parent>
     <groupId>co.autotronix</groupId>
     <artifactId>AutotronixBackend</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>war</packaging>
     <name>AutotronixBackend</name>
     <description>AutotronixBackend</description>
@@ -40,11 +40,18 @@
             <artifactId>spring-cloud-azure-starter-active-directory</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>com.microsoft.sqlserver</groupId>-->
+<!--            <artifactId>mssql-jdbc</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
-            <scope>runtime</scope>
+            <version>12.6.1.jre11</version>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
